@@ -1,0 +1,17 @@
+<h2>Welcome to Emberizo, <%= @name %>! We're glad you're here.</h2>
+
+<p>Please click the link below to verify your account:</p>
+
+<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+
+<p>(If you can't get the link to open, copy this URL and paste it into your browser:</p>
+
+<p><%= confirmation_url(@resource, confirmation_token: @token) %></p>
+
+<p>Once your account is confirmed please feel free to explore, find new friends or reconnect
+with old ones, edit your account and above all, post interesting content for everyone to see!</p>
+
+<p>Welcome aboard and thanks for joining,</p>
+
+<p><b>That Banjo Guy</b></p>
+<p>Chief Instigator, Emberize</p>
