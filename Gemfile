@@ -29,6 +29,11 @@ group :development do
 #  gem 'letter_opener'
   gem 'guard'
   gem 'guard-rspec', '~> 4.2.8'
+
+  gem 'capistrano', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-rbenv', require: false
 end
 
 group :development, :test do
