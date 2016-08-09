@@ -49,9 +49,9 @@ group :production do
   gem 'thin'
   gem 'cloudinary'
   gem 'rails_12factor'
+  gem 'mysql2', '~> 0.3.18'
 end
 
-gem 'mysql2'
 gem 'devise'
 gem 'carrierwave'
 gem 'friendly_id'
