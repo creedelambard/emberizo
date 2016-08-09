@@ -4,7 +4,7 @@ lock '3.6.0'
 set :application, 'emberizo'
 set :repo_url, 'git@github.com:creedelambard/emberizo.git'
 
-default_run_options[:shell] = '/bin/bash --login'
+set default_run_options[:shell] = '/bin/bash --login'
 set :passenger_in_gemfile, true
 
 set :deploy_to, '/home/deploy/emberizo'
