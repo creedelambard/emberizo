@@ -45,13 +45,13 @@ end
 
 group :production do
 #  gem 'pg'
-  gem 'mysql2'
 #  gem 'unicorn'
   gem 'thin'
   gem 'cloudinary'
   gem 'rails_12factor'
 end
 
+gem 'mysql2'
 gem 'devise'
 gem 'carrierwave'
 gem 'friendly_id'
