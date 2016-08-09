@@ -4,7 +4,9 @@ lock '3.6.0'
 set :application, 'emberizo'
 set :repo_url, 'git@github.com:creedelambard/emberizo.git'
 
-set :deploy_to, '/home/deploy/myapp'
+set :passenger_in_gemfile, true
+
+set :deploy_to, '/home/deploy/emberizo'
 
 set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
