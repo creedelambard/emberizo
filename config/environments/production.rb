@@ -83,11 +83,11 @@ Rails.application.configure do
   ActionMailer::Base.perform_deliveries = true
 
   ActionMailer::Base.smtp_settings = {
-    :address              => 'smtp.sendgrid.net',
+    :address              => 'www.emberizo.com',
     :port                 => '587',
-    :domain               => 'heroku.com',
-    :user_name            => ENV['USERNAME'],
-    :password             => ENV['PASSWORD'],
+    :domain               => 'emberizo.com',
+    :user_name            => ENV['MAIL_USER'],
+    :password             => ENV['MAIL_PASS'],
     :authentication       => "plain",
     :enable_starttls_auto => true
   }
