@@ -67,7 +67,7 @@ gem 'counter_culture'
 
 gem 'faker'
 gem 'populator'
-gem 'auto_html'
+gem 'auto_html', '~> 1.6.4'
 gem 'sanitize'
 
 # Use ActiveModel has_secure_password
