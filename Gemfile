@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'rails', '4.1.6'
-gem 'rails'
+gem 'rails', '~> 4.2.7'
 
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 4.0.3'
@@ -26,7 +26,7 @@ group :development do
   gem 'spring'
   gem 'better_errors'
   gem 'binding_of_caller'
-#  gem 'letter_opener'
+  gem 'letter_opener'
   gem 'guard'
   gem 'guard-rspec', '~> 4.2.8'
 
