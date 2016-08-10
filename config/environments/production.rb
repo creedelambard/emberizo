@@ -79,12 +79,12 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'http://www.emberizo.com' }
 
-  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.delivery_method = :sendmail
   ActionMailer::Base.perform_deliveries = true
 
   ActionMailer::Base.smtp_settings = {
-    :address              => 'www.emberizo.com',
-    :port                 => '587',
+    :address              => 'localhost',
+    :port                 => '25',
     :domain               => 'emberizo.com',
     :user_name            => ENV['MAIL_USER'],
     :password             => ENV['MAIL_PASS'],
