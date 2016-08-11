@@ -38,10 +38,12 @@
           <%= f.label :dob %>
           <%= f.text_field :dob, placeholder: 'Date of Birth', class: 'form-control' %>
         </div>
+<!--    Suggested by bfs - just leave it off? 
         <div class="form-group">
           <%= f.label :sex %><br>
           <%= f.select :sex, options_for_seasons, class: 'form-control', prompt: 'Select One' %>
-        </div>
+          </div>
+-->
         <div class="actions">
           <%= submit_tag 'Update', class: 'btn btn-primary' %>
         </div>
