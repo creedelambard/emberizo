@@ -4,7 +4,7 @@
 
 module UsersHelper
   def options_for_seasons
-    [['Male', 'male'], ['Female', 'female']]
+    [['Male', 'male'], ['Female', 'female'], ['Other/Decline to state','n/a']]
   end
 
   def age(dob)
